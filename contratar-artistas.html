@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta lang="es">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+     <script type="text/javascript" src="js/materialize.js"></script>
+	
+	
+	<title>PartySound</title>
+
+
+</head>
+<body>
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
+  <nav>
+    <div class="nav-wrapper lime">
+      <a href="#!" class="brand-logo responsive-img"><img src="images/partysound.png" class="responsive-img"></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down color">
+        <li><a href="index2.html">Inicio</a></li>
+        <li><a href="artistas.html">Artistas</a></li>
+        <li><a href="quienes-somos.html">¿Quienes somos?</a></li>
+        <li ><a href="contacto.html">Contacto</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+      <!----------MOBILE---------->
+      <ul class="side-nav" id="mobile-demo">
+        <li class="active"><a href="inicio.html">Inicio</a></li>
+        <li><a href="artistas.html">Artistas</a></li>
+        <li class="active"><a href="quienes-somos.html">¿Quienes somos?</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login.html">Perfil</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--///////////CONTENIDO //////////////////-->
+
+  	<div class="row">
+      <div class="col l9 nav-info">
+     
+    <div class=" col s12 barra grey darken-2">
+        <div class="botones"> 
+        <a class="waves-effect waves-brown btn-large black-text  grey lighten-5" id="btnpet" ><i class="material-icons right">keyboard_arrow_right</i>Petición</a>
+<a class="waves-effect waves-brown btn-large black-text  grey lighten-5 " id="btnrea"><i class="material-icons right">keyboard_arrow_right</i>Realizados</a>
+<a class="waves-effect waves-brown btn-large black-text  grey lighten-5"><i class="material-icons right">keyboard_arrow_right</i>Notificaciones</a>
+      </div>
+    </div>
+  
+            
+           
+  <div class="peticion" id="peticion">
+  <div class="row">
+    <form class="col s12" name="formulario">
+      <div class="row">
+        <div class="input-field col s6">
+          <input  id="Nomb-artista" type="text" class="validate">
+          <label for="first_name">Nombre del artista</label>
+        </div>
+        <div class="input-field col s6">
+           <input  id="first_name" type="text" class="validate">
+          <label for="first_name">Presupuesto</label>
+        </div>
+      </div>
+      <div class="row ">
+         <center><label ><h6>Fecha</h6></label></center>
+          <div class="input-field col s12 ">
+              
+          <input type="date" class="datepicker">
+          
+        </div>
+      </div>
+        
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="text" class="validate">
+          <label for="password">Lugar</label>
+        </div>
+      </div>
+        <label ><h6>Tipo de evento</h6></label></br>
+         <p>
+      <input name="group1" type="radio" id="test1" />
+      <label for="test1">Privado</label>
+    </p>
+    <p>
+      <input name="group1" type="radio" id="test2"  />
+      <label for="test2">Público</label>
+        </p></br>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="Duracion" placeholder="" type="number" name="duracion" class="validate" length="1">
+          <label for="duracion"><h6>Duración(Hrs)</h6></label>
+        </div>
+          <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea" length="120"></textarea>
+            <label for="textarea1">Comentarios</label>
+          </div>
+        </div>
+          <button class="btn-large waves-effect waves-yellow  lime darken-2" type="submit" name="action" style="margin-left:200px;">Submit
+    <i class="material-icons right">send</i>
+  </button>
+        
+          
+      </div>
+        
+        
+    </form>
+  </div>
+   </div>     
+
+      </div>
+   
+    
+       
+      <div class="col l3 separador">
+        <nav>
+    <div class="nav-wrapper grey lighten-4 nav-search">
+      <form class="grey-text">
+        <div class="input-field grey-text">
+          <input id="search" type="search" placeholder="Búsqueda" required>
+          <label for="search"><i class="material-icons grey-text text-darken-1">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+          
+      </form>
+    </div>
+  </nav>
+  
+
+
+    </div>
+<div class="row">
+<div class="col l9 nav-info">
+    
+ <div class="realizados" id="realizados">
+  <div class="row">
+    <form class="col s12" name="formulario">
+      <div class="row">
+        <div class="input-field col s6">
+          <input  id="Nomb-artista" type="text" class="validate">
+          <label for="first_name">Nombre del artista</label>
+        </div>
+        <div class="input-field col s6">
+           <input  id="first_name" type="text" class="validate">
+          <label for="first_name">Presupuesto</label>
+        </div>
+      </div>
+      <div class="row ">
+         <center><label ><h6>Fecha</h6></label></center>
+          <div class="input-field col s12 ">
+              
+          <input type="date" class="datepicker">
+          
+        </div>
+      </div>
+        
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="text" class="validate">
+          <label for="password">Lugar</label>
+        </div>
+      </div>
+       
+      
+          <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea" length="120"></textarea>
+            <label for="textarea1">Comentarios</label>
+          </div>
+        </div>
+          <button class="btn-large waves-effect waves-yellow  lime darken-2" type="submit" name="action" style="margin-left:200px;">Submit
+    <i class="material-icons right">send</i>
+  </button>
+        
+          
+      </div>
+        
+        
+    </form>
+  </div>
+   </div>     
+
+      </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+  <!--/////////////FOOTER/////////////-->
+     <!--pie de pagina(footer)-->
+      <footer class="page-footer  lime">
+
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="black-text">Party Sound</h5>
+                <p class="grey-text text-lighten-4">La tecnologia aplicada a los muebles</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="black-text">Redes sociales</h5>
+               
+  <ul class="collection">
+    <li class="collection-item avatar">
+      <img src="img/facebook.png" alt="" class="circle">
+      <span class="title">Facebook</span>
+      <p>Like <br>
+         Fanpage
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">arrow_forward</i></a>
+    </li>
+    <li class="collection-item avatar">
+    <img src="img/instagram2.png" alt="" class="circle">
+      <span class="title">Instagram</span>
+      <p>Siguenos <br>
+         
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">arrow_forward</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <img src="img/twitter.png" alt="" class="circle">
+      <span class="title">Twiter</span>
+      <p>Follow<br>
+       
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">arrow_forward</i></a>
+    </li>
+    
+  </ul>
+            
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+
+
+
+
+        
+  <script>
+         $(".button-collapse").sideNav();
+         $('.parallax').parallax();
+         $(".dropdown-button").dropdown({ inDuration: 300,
+      outDuration: 225,
+      constrain_width: false, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: false, // Displays dropdown below the button
+      alignment: 'left' // Displays dropdown with edge aligned to the left of button
+                                        });
+         $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+      
+      $(document).ready(function(){
+		$("#btnpet").on( "click", function() {
+			$('#peticion').show(); //muestro mediante id
+			$('#realizados').hide(); //muestro mediante clase
+		 });
+		$("#btnrea").on( "click", function() {
+			$('#peticion').hide(); //oculto mediante id
+			$('#realizados').show(); //muestro mediante clase
+		});
+	});
+  </script>
+    
+
+
+
+</body>
+</html>

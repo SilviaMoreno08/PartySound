@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+	
+	<title>PartySound</title>
+
+
+</head>
+<body>
+
+  <nav>
+    <div class="nav-wrapper lime">
+      <a href="#!" class="brand-logo responsive-img"><img src="images/partysound.png" class="responsive-img"></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down color">
+        <li><a href="index2.html">Inicio</a></li>
+        <li><a href="artistas.html">Artistas</a></li>
+        <li><a href="quienes-somos.html">¿Quienes somos?</a></li>
+        <li ><a href="contacto.html">Contacto</a></li>
+        <li><a href="javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" id="fade" class="active" >Iniciar sesión</a></li>
+      </ul>
+      <!----------MOBILE---------->
+      <ul class="side-nav" id="mobile-demo">
+        <li class="active"><a href="inicio.html">Inicio</a></li>
+        <li><a href="artistas.html">Artistas</a></li>
+        <li class="active"><a href="quienes-somos.html">¿Quienes somos?</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login.html">Iniciar sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--///////////CONTENIDO //////////////////-->
+
+<div >
+   <div  id="light" class="modal-prueba">
+   <div class="justificar ">
+   <div class= "encabezado">
+       <center><img src="images/dj-128.png" class="responsive-img"></center>
+
+        
+        </div>
+
+   
+      <div class="row">
+         <form class="col s10">
+        <div class="input-field col s12">
+        <i class="material-icons prefix">account_circle</i>
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">Nombres</label>
+        </div>
+        
+        <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">vpn_key</i>
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+        
+    
+      
+       </div> 
+    </form>
+   <div class="pie-login">
+   <center><button class="btn-large waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i></center>
+  </button>
+  <button class="btn-large waves-effect waves-light" type="submit" name="action" href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';">Submit
+    <i class="material-icons right">send</i>
+      </div>
+    </div>
+      
+    </div>
+        
+
+      
+<!-- fin ventana modal -->
+    
+   
+
+
+
+
+
+  <!--/////////////FOOTER/////////////-->
+
+
+        
+  <script>
+         $(".button-collapse").sideNav();
+         $('.parallax').parallax();
+         $('select').material_select();
+  </script>
+
+
+
+</body>
+</html> 
